@@ -1,11 +1,11 @@
 package main
 
-import "fmt"
+import "github.com/01-edu/z01"
 
-func main() string {
-	p := make([]byte, 26)
-	for i := range p {
-		p[i] = 'a' + byte(i)
+func main() {
+	
+	for i := 'a'; i <='z'; i++ {
+		z01.PrintRune(i)
 	}
-	return string(p)
+	
 }
