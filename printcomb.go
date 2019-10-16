@@ -10,9 +10,9 @@ var k rune
 
 	for i := '0' ; i <= '7' ; i++ {
 		z01.PrintRune(i)
-		for j :='1'; j > i , j <= '8' ; j++ {
+		for j := '0'; j > i , j <= '8' ; j++ {
 			z01.PrintRune(j)
-			for k := '2' ; k > j , k <= '9' ; k++ {
+			for k := '0' ; k > j , k <= '9' ; k++ {
 				z01.PrintRune(k + ',' + ' ')
 			}
 		}
