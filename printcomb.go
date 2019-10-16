@@ -4,10 +4,6 @@ import "github.com/01-edu/z01"
 
 func PrintComb() {
 
-	var i rune
-	var j rune
-	var k rune
-
 	for i := '0'; i <= '7'; i++ {
 		z01.PrintRune(i)
 		for j := '1'; j > i && j <= '8'; j++ {
