@@ -4,10 +4,14 @@ package piscine
 
 func StrRev(s string) string {
 	sl := []byte(s)
-	var stringg string
-	for i := len(s) - 1; i >= 0; i-- {
-		stringg += sl[i]
+	var newS string
+	ln := 0
+	for range s {
+		ln += 1
 		//z01.PrintRune(rune(sl[i]))
 	}
-	return stringg
+	for _, letter := range sl {
+		newS += sl[letter]
+	}
+	return newS
 }
