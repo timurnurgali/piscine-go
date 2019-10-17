@@ -3,6 +3,7 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	z01.PrintRune(rune(n))
-	z01.PrintRune(10)
+	for i := 0; i < len(n)-1; i++ {
+		z01.PrintRune(rune(n[i]))
+	}
 }
