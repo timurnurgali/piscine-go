@@ -11,7 +11,7 @@ func StrRev(s string) string {
 		//z01.PrintRune(rune(sl[i]))
 	}
 	for _, letter := range sl {
-		newS += sl[letter]
+		newS += string(sl[letter])
 	}
 	return newS
 }
