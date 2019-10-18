@@ -7,7 +7,7 @@ package piscine
 func StrRev(s string) string {
 
 	bSlice := []rune(s)
-	temp := bSlice
+	temp := []rune(s)
 	var ln int
 
 	for range s {
