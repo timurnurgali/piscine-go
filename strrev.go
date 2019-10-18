@@ -8,7 +8,7 @@ func StrRev(s string) string {
 
 	bSlice := []byte(s)
 	var ln int
-	var rev []byte
+	var rev byte
 	for range s {
 		ln += 1
 	}
