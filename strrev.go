@@ -6,18 +6,18 @@ package piscine
 
 func StrRev(s string) string {
 
-	bSlice := []byte(s)
-	var ln int
 	temp := s
+	bSlice := []rune(s)
+	var ln int
 
 	for range s {
 		ln += 1
 	}
 
 	for i := 0; i < ln; i++ {
-		s[i] = temp[ln-i-1]
+		bSlice[i] = temp[ln-i-1]
 	}
-	return s
+	return string(bSlice)
 }
 
 // func main() {
