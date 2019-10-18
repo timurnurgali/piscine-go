@@ -10,7 +10,7 @@ func StrRev(s string) string {
 		ln += 1
 		//z01.PrintRune(rune(sl[i]))
 	}
-	for i := ln - 1 ; i >= 0 ; i-- {
+	for i := ln - 1; i >= 0; i-- {
 		newS += sl[i]
 	}
 	return string(newS)
