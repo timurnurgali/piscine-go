@@ -8,15 +8,16 @@ func StrRev(s string) string {
 
 	bSlice := []byte(s)
 	var ln int
-	var rev byte
+	temp := s
+
 	for range s {
 		ln += 1
 	}
 
-	for i := ln - 1; i >= 0; i-- {
-		rev += bSlice[i]
+	for i := 0; i < ln; i++ {
+		s[i] = temp[ln-i-1]
 	}
-	return string(rev)
+	return s
 }
 
 // func main() {
