@@ -1,19 +1,26 @@
+// package main
 package piscine
 
-//import "github.com/01-edu/z01" NOT FINISHED YET
+// import "fmt"
+// import "github.com/01-edu/z01"
 
 func StrRev(s string) string {
 
-	slice := []byte(s)
-	var newslice []byte
+	bSlice := []byte(s)
 	var ln int
-
+	var rev []byte
 	for range s {
 		ln += 1
 	}
 
 	for i := ln - 1; i >= 0; i-- {
-		newslice = append(newslice, slice[i])
+		rev += bslice[i]
 	}
-	return string(newslice)
+	return string(rev)
 }
+
+// func main() {
+// 	s := "Hello World!"
+// 	s = StrRev(s)
+// 	fmt.Println(s)
+// }
