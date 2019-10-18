@@ -4,7 +4,7 @@ package piscine
 
 func StrRev(s string) string {
 	sl := []byte(s)
-	var newS []byte
+	var newS uint8
 	ln := 0
 	for range s {
 		ln += 1
