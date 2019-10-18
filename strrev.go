@@ -6,8 +6,8 @@ package piscine
 
 func StrRev(s string) string {
 
-	temp := rune(s)
 	bSlice := []rune(s)
+	temp := bSlice
 	var ln int
 
 	for range s {
