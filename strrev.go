@@ -3,15 +3,17 @@ package piscine
 //import "github.com/01-edu/z01" NOT FINISHED YET
 
 func StrRev(s string) string {
-	sl := []byte(s)
-	var newS uint8
-	ln := 0
+
+	slice := []byte(s)
+	var newslice []byte
+	var ln int
+
 	for range s {
 		ln += 1
-		//z01.PrintRune(rune(sl[i]))
 	}
+
 	for i := ln - 1; i >= 0; i-- {
-		newS += sl[i]
+		newslice = append(newslice, slice[i])
 	}
-	return string(newS)
+	return string(newslice)
 }
