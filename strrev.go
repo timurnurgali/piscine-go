@@ -14,7 +14,7 @@ func StrRev(s string) string {
 	}
 
 	for i := ln - 1; i >= 0; i-- {
-		rev += bslice[i]
+		rev += bSlice[i]
 	}
 	return string(rev)
 }
