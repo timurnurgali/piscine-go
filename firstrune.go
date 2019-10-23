@@ -1,7 +1,7 @@
 // package main
 package piscine
 
-import "github.com/01-edu/z01"
+// import "github.com/01-edu/z01"
 
 func FirstRune(s string) rune {
 	srun := []rune(s)
