@@ -5,14 +5,11 @@ package piscine
 
 func NRune(s string, n int) rune {
 
-	if n > 0 {
-		srun := []rune(s)
-		b := n - 1
-		return srun[b]
-	}
-	return 0
+	strToRune := []rune(s)
+	n2 := n - 1
+	return strToRune(n2)
 }
 
 // func main() {
-// 	z01.PrintRune(NRune("Tadasdasdsad",0)) //u index 3
+// 	z01.PrintRune(NRune("Tadasdasdsad",0))
 // }
