@@ -7,6 +7,7 @@ func TrimAtoi(s string) int {
 	sl := []rune(s)
 	var numRune []rune
 	neg := 1
+	negdisabled := true
 	lnRune := 0 //length of numRune
 	lnStr := 0  //length of string
 	finalNum := 0
@@ -15,12 +16,14 @@ func TrimAtoi(s string) int {
 	}
 
 	for i := 0; i < lnStr; i++ {
-		if sl[i] == '-' {
-			if sl[i+1] >= '0' && sl[i+1] <= '9' {
+		if negdisabled {
+			if sl[i] == '-' {
 				neg = -1
 			}
 		}
+
 		if sl[i] >= '0' && sl[i] <= '9' {
+			negdisabled = false
 			numRune = append(numRune, sl[i])
 		}
 	}
@@ -43,6 +46,6 @@ func TrimAtoi(s string) int {
 }
 
 // func main() {
-// 	ex := TrimAtoi("ds-ax-45rd8")
+// 	ex := TrimAtoi("dsax4-5rd8")
 // 	println(ex)
-// } FUCKING YES!!!
+// } //FUCKING YES!!!
