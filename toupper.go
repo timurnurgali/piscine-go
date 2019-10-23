@@ -1,12 +1,12 @@
 package piscine
 
 func ToUpper(s string) string {
-	a := []rune(s)
+	slice := []rune(s)
 	b := 'A' - 'a'
-	for i := range runes {
-		if runes[i] >= 'a' && runes[i] <= 'z' {
-			runes[i] += diff
+	for i := range slice {
+		if slice[i] >= 'a' && slice[i] <= 'z' {
+			slice[i] += b
 		}
 	}
-	return string(runes)
+	return string(slice)
 }
