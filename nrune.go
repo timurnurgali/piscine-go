@@ -4,11 +4,10 @@ package piscine
 // import "github.com/01-edu/z01"
 
 func NRune(s string, n int) rune {
-	if n <= 0 {
-		return '\n'
-	}
+
 	srun := []rune(s)
-	return srun[n-1]
+	nb := n - 1
+	return srun(nb)
 }
 
 // func main() {
