@@ -3,7 +3,7 @@ package piscine
 
 // import "fmt"
 
-func BasicAtoi(s string) int {
+func BasicAtoi2(s string) int {
 
 	ln := 0
 	num := 0
