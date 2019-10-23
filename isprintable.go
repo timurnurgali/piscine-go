@@ -1,11 +1,24 @@
 package piscine
 
 func IsPrintable(str string) bool {
-	slice := []rune(str)
-	for _, r := range slice {
-		if r == '\t' || r == '\n' || r == '\v' || r == '\f' || r == '\r' {
-			return false
-		}
+	var t bool = true
+	var f bool = false
+	ln := 0
+	b := 0
+	for range str {
+		ln++
 	}
-	return true
+	str_rune := []rune(str)
+	for i := 0; i < ln; i++ {
+		if str_rune[i] >= 32 && str_rune[i] <= 127 {
+			b++
+		}
+
+	}
+	if ln == b {
+		return t
+	} else {
+		return f
+	}
+
 }
