@@ -1,5 +1,3 @@
-// package piscine APPEND ALLOWED
-
 // package main
 package piscine
 
@@ -15,12 +13,13 @@ func PrintNbrInOrder(n int) {
 		n /= 10
 	}
 	for i := 0; i < 10; i++ {
-		if array[i] > 0 {
+		for array[i] > 0 {
 			z01.PrintRune('0' + rune(i))
+			array[i]--
 		}
 	}
 }
 
 // func main() {
-// 	PrintNbrInOrder(348)
+// 	PrintNbrInOrder(30048)
 // }
