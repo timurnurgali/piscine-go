@@ -5,7 +5,7 @@ func ToLower(s string) string {
 	b := 'A' - 'a'
 	for i := range slice {
 		if slice[i] >= 'A' && slice[i] <= 'Z' {
-			slice[i] -= diff
+			slice[i] -= b
 		}
 	}
 	return string(slice)
