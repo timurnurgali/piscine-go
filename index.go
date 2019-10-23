@@ -1,23 +1,20 @@
-// package main
 package piscine
 
 func Index(s string, toFind string) int {
-
-	ln := 0
-	for range toFind {
-		ln++
-	}
-
-	for index := range s {
-		if s[index] == toFind[0] {
-			if s[index:index+ln] == toFind[:] {
-				return index
+	sRunes := []rune(s)
+	n := StrLen(s)
+	toFindRunes := []rune(toFind)
+	for i := range sRunes {
+		matches := true
+		for j, r2 := range toFindRunes {
+			if i+j >= n || sRunes[i+j] != r2 {
+				matches = false
+				break
 			}
+		}
+		if matches {
+			return i
 		}
 	}
 	return -1
 }
-
-// func main() {
-// 		println(Index("Alem School", "cho"))
-// 	}
