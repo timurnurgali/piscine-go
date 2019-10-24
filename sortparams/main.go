@@ -21,6 +21,7 @@ func main() {
 
 		if tick > 0 {
 			z01.PrintRune(runes[i])
+			z01.PrintRune('\n')
 		}
 	}
 }
